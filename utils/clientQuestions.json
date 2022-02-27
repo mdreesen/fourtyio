@@ -1,0 +1,138 @@
+{
+    "aboutMother": [
+        {
+            "question": "If I have a preferred name",
+            "name": "preferredName"
+        },
+        {
+            "question": "Language",
+            "name": "language"
+        },
+        {
+            "question": "Date of birth",
+            "name": "dateOfBirth"
+        },
+        {
+            "question": "Maiden name",
+            "name": "maidenName"
+        },
+        {
+            "question": "Place of Birth (city, state, country)",
+            "name": "placeOfBirth"
+        },
+        {
+            "question": "Social Security Num",
+            "name": "socialSecurityNumber"
+        },
+        {
+            "question": "Marital status",
+            "name": "maritalStatus"
+        },
+        {
+            "question": "Ethnicity (race)",
+            "name": "ethnicity"
+        },
+        {
+            "question": "Occupation/employer",
+            "name": "occupation"
+        },
+        {
+            "question": "Religion",
+            "name": "religion"
+        },
+        {
+            "question": "Highest education",
+            "name": "highestEducation"
+        },
+        {
+            "question": "Do you have a living will",
+            "boolean": "true",
+            "name": "livingWill"
+        },
+        {
+            "question": "organ donor",
+            "boolean": "true",
+            "name": "organDonor"
+        },
+        {
+            "question": " If you have religious cultural or ethnic preferences",
+            "name": "culturalPreferences"
+        },
+        {
+            "question": "Primary Address",
+            "name": "primaryAddress"
+        },
+        {
+            "question": "Secondary Address",
+            "name": "secondaryAddress"
+        },
+        {
+            "question": "Who referred you?",
+            "name": "referral"
+        },
+        {
+            "question": "Primary phone",
+            "name": "primaryPhone"
+        },
+        {
+            "question": "Secondary phone",
+            "name": "secondaryPhone"
+        },
+        {
+            "question": "Route not to contact (prefer not to call work phone, email etc…)",
+            "name": "doNotContactRoute"
+        },
+        {
+            "question": "Grant people to access health information",
+            "name": "grantPermission"
+        },
+        {
+            "question": "Preferred method of contact",
+            "name": "preferredMethodOfContact"
+        },
+        {
+            "question": "emergency contact (name, relationship, phone number, email (optional))",
+            "name": "emergencyContact"
+        }
+    ],
+    "currentPregnancy": [
+        {
+            "question": "Are you pregnant",
+            "boolean": "true"
+        },
+        {
+            "question": "last normal period"
+        },
+        {
+            "question": "accuracy of date",
+            "dropdown": "true"
+        },
+        {
+            "question": "conception date (if known)"
+        },
+        {
+            "question": "ultra sound estimate due date"
+        },
+        {
+            "question": "ovulation date (if known)"
+        },
+        {
+            "question": "fetal heart heard",
+            "boolean": "true"
+        },
+        {
+            "question": "If you felt fetal movement",
+            "boolean": "true"
+        },
+        {
+            "question": "plan to delivery site",
+            "boolean": "true"
+        },
+        {
+            "question": "wifi password"
+        },
+        {
+            "question": "home birth location"
+        }
+    ]
+}
