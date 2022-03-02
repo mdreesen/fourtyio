@@ -1,3 +1,5 @@
+## Directions
+
 - Please create a user with the fields of username(unique), email(unique), first_name, last_name, and a password.
 - The routes for creating a user "in-app" are not yet present.
 - Please use dbeaver or another sql db manager to create a user.
