@@ -6,6 +6,7 @@ import { ep_log } from 'src/middleware/loggers';
 import { cfg } from 'src/env';
 import { router } from 'src/routes/router';
 import { TypeOrmInit } from 'src/db/typeorm';
+import { express_session } from 'src/middleware/redis.session';
 
 const app = express();
 
@@ -17,6 +18,7 @@ app.use(ep_log);
 
 (async function main() {
   try {
+    app.use(express_session);
     app.use(...(await router()));
 
     await TypeOrmInit();

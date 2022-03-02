@@ -1,8 +1,8 @@
 import { Router } from 'express';
 import { main } from 'src/controllers/root/main';
 
-const root = Router();
+const router = Router();
 
-root.route('/').get(main);
+router.route('/').get(main);
 
-export default root;
+export default router;
