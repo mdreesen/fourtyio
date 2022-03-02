@@ -22,5 +22,5 @@ export class Worker extends BaseEntity {
   password!: string;
 
   @Column({ type: 'int', nullable: true })
-  associated_users?: Users[];
+  associated_users!: Users[] | undefined[];
 }
