@@ -2,18 +2,18 @@ import { Pool } from 'pg';
 
 export const db = new Pool({ idleTimeoutMillis: 100 });
 
-type QueryResult<T> = void | T;
+export type PGQueryResult<T> = void | T;
 
 export async function dbq<T>(
   query: string,
   array: string[],
   rows: null | true | false | 1 | 0 = null
-): Promise<QueryResult<T>> {
+): Promise<PGQueryResult<T>> {
   if (!Array.isArray(array)) array = [];
   if (rows === null) {
     return (await db
       .query(query, array)
-      .catch((err: Error) => console.log(err))) as QueryResult<T>;
+      .catch((err: Error) => console.log(err))) as PGQueryResult<T>;
   }
   if (rows === false || rows === 0)
     return await db
@@ -24,6 +24,6 @@ export async function dbq<T>(
     return (await db
       .query(query, array)
       .then((res) => res.rows)
-      .catch((err) => console.log(err))) as QueryResult<T>;
+      .catch((err) => console.log(err))) as PGQueryResult<T>;
   }
 }
