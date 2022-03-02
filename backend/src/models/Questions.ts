@@ -7,11 +7,4 @@ export class Questions extends BaseEntity {
 
   @Column({ type: 'varchar', length: 100 })
   answers!: string;
-
-  // This is the questions table?
-  // @Column()
-  // feelings!: string;
-
-  // @Column()
-  // associateWithWorker!: string;
 }
