@@ -1,8 +1,14 @@
 import { Users } from 'src/models/Users';
-import { Entity, PrimaryGeneratedColumn, Column, BaseEntity } from 'typeorm';
+import {
+  Entity,
+  PrimaryGeneratedColumn,
+  Column,
+  BaseEntity,
+  OneToMany,
+} from 'typeorm';
 
 @Entity()
-export class Worker extends BaseEntity {
+export class BirthWorker extends BaseEntity {
   @PrimaryGeneratedColumn({ type: 'int' })
   id!: number;
 
@@ -21,6 +27,6 @@ export class Worker extends BaseEntity {
   @Column({ type: 'varchar', length: 255 })
   password!: string;
 
-  @Column({ type: 'int', nullable: true })
-  associated_users!: Users[] | undefined[];
+  @OneToMany(() => Users, (users: { id: number }) => users.id)
+  associated_users?: Users[];
 }

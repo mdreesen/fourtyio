@@ -1,5 +1,15 @@
+import { BirthWorker } from 'src/models/BirthWorker';
 import { UserDetails } from 'src/models/UserDetails';
-import { Entity, PrimaryGeneratedColumn, Column, BaseEntity } from 'typeorm';
+
+import {
+  Entity,
+  PrimaryGeneratedColumn,
+  Column,
+  BaseEntity,
+  OneToOne,
+  JoinColumn,
+  ManyToOne,
+} from 'typeorm';
 
 @Entity()
 export class Users extends BaseEntity {
@@ -21,9 +31,10 @@ export class Users extends BaseEntity {
   @Column({ type: 'varchar', length: 255 })
   password!: string;
 
-  @Column({ type: 'int', nullable: true })
+  @OneToOne(() => UserDetails)
+  @JoinColumn()
   user_details?: UserDetails;
 
-  @Column({ type: 'int', nullable: true })
-  associated_worker?: number;
+  @ManyToOne(() => BirthWorker, (birthworker: { id: number }) => birthworker.id)
+  associated_users!: BirthWorker;
 }
