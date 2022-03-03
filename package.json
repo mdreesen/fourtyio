@@ -1,22 +1,24 @@
 {
   "name": "fourtyio",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "fe": "cd frontend && npm run dev",
+    "bets": "cd backend && npm run tsw",
+    "bemon": "cd backend && npm run mon",
+    "dcup": "bash ./dc-up.sh",
+    "dcstop": "bash ./dc-stop.sh"
   },
-  "dependencies": {
-    "bootstrap": "^5.1.3",
-    "next": "12.1.0",
-    "react": "17.0.2",
-    "react-bootstrap": "^2.1.2",
-    "react-dom": "17.0.2"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdreesen/fourtyio.git"
   },
-  "devDependencies": {
-    "eslint": "8.10.0",
-    "eslint-config-next": "12.1.0"
-  }
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mdreesen/fourtyio/issues"
+  },
+  "homepage": "https://github.com/mdreesen/fourtyio#readme"
 }
