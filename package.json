@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "fe": "cd frontend && npm run dev",
-    "bets": "cd backend && npm run tsw",
+    "bets": "cd backend && npm run dev",
     "bemon": "cd backend && npm run mon",
     "dcup": "bash ./dc-up.sh",
     "dcstop": "bash ./dc-stop.sh"
