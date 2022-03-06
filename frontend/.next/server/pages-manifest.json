@@ -2,6 +2,5 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/home/client/settings": "pages/home/client/settings.js",
-  "/home/client/home": "pages/home/client/home.js"
+  "/": "pages/index.js"
 }

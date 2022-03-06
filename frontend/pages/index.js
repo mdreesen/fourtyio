@@ -21,8 +21,6 @@ export default function Home() {
             height={878} // Desired size with correct aspect ratio
             width={585} // Desired size with correct aspect ratio
             layout="fill"
-            z-index={1}
-            position="absolute"
             alt="mother and baby holding hands"
           /> */}
         <span><h1 className="title">Fourty-io</h1></span>
