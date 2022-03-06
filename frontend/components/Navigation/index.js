@@ -7,10 +7,10 @@ export default function Navigation() {
     return (
         <Navbar bg="light" variant="light">
             <Container>
-                <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+                <Navbar.Brand href="#home">fourtyio</Navbar.Brand>
                 <Nav className="me-auto">
-                    <Nav.Link href="#home">Link</Nav.Link>
-                    <Nav.Link href="#features">Link</Nav.Link>
+                    <Nav.Link href="/home/client/home">home</Nav.Link>
+                    <Nav.Link href="/home/client/settings">Settings</Nav.Link>
                     <Nav.Link href="#pricing">Link</Nav.Link>
                 </Nav>
             </Container>

@@ -6,6 +6,7 @@ import UserSignup from '../components/UserSignup'
 import UserLogin from '../components/UserLogin'
 
 export default function Home() {
+
   return (
     <div className={styles.container}>
       <Head>
@@ -15,12 +16,15 @@ export default function Home() {
       </Head>
 
       <section className="landingHero">
-        <Image
-          src="/images/landing/landing.webp" // Route of the image file
-          height={878} // Desired size with correct aspect ratio
-          width={585} // Desired size with correct aspect ratio
-          alt="mother and baby holding hands"
-        />
+          {/* <Image
+            src="/images/landing/landing.webp" // Route of the image file
+            height={878} // Desired size with correct aspect ratio
+            width={585} // Desired size with correct aspect ratio
+            layout="fill"
+            z-index={1}
+            position="absolute"
+            alt="mother and baby holding hands"
+          /> */}
         <span><h1 className="title">Fourty-io</h1></span>
         <div className="loginSignupBtn">
           <UserLogin />
