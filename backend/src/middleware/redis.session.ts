@@ -1,18 +1,12 @@
-import connectRedis from 'connect-redis';
-import { createClient } from 'redis';
+import connectRedis, { Client } from 'connect-redis';
 import { redis } from '../env';
 import session from 'express-session';
+import { redisClient } from 'src/db/redis';
 
 const RedisStore = connectRedis(session);
 
 export const express_session = session({
-  store: new RedisStore({
-    client: createClient({
-      host: redis.host,
-      port: redis.port,
-      password: redis.password,
-    }),
-  }),
+  store: new RedisStore({ client: (<unknown>redisClient) as Client }),
   cookie: {
     secure: false,
     httpOnly: false,
