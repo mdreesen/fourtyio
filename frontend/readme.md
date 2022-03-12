@@ -7,7 +7,8 @@ In the example about we imported a named export named 'example' from the file lo
 
 Vscode supports a bias towards absolute pathing in the settings.
 Open up settings using 'ctrl + ,' or 'cmd + ,' and type in 'js path'.
-By default Vscode uses the shortest option which will leverage this feature enabled by the jsconfig.json.
+By default Vscode uses the shortest option which will not leverage this feature enabled by the jsconfig.json.
+For this feature to work we have a .vscode directory which will enable this feature in its settings.json.
 
 To run this frontend powered by nextjs use the command 'npm run dev' or 'yarn run dev'.
 Alternatively you can navigate to the project root(one level up) and run 'npm run fe' or 'yarn run fe'.
