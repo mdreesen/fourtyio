@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/mdreesen/fourtyio/issues"
   },
-  "homepage": "https://github.com/mdreesen/fourtyio#readme"
+  "homepage": "https://github.com/mdreesen/fourtyio#readme",
+  "dependencies": {
+    "docker": "^1.0.0"
+  }
 }
