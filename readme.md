@@ -1,3 +1,5 @@
+# Getting started
+
 Please visit either the frontend dir or backend dir for more info on a specific area.
 
 You will need docker installed and using docker compose v2. Check your docker settings to enable the latest version of compose.
