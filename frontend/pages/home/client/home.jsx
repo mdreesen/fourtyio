@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import Layout from '/components/layout'
+import Head from 'next/head';
+import { Layout } from '/components/layout';
 
 export default function ClientHome() {
   return (
@@ -9,5 +9,5 @@ export default function ClientHome() {
       </Head>
       <div>Client Home</div>
     </Layout>
-  )
+  );
 }

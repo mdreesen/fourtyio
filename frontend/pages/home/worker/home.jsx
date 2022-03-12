@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import Layout from '../../components/Layout'
+import Head from 'next/head';
+import { Layout } from '/components/Layout';
 
 export default function WorkerHome() {
   return (
@@ -9,5 +9,5 @@ export default function WorkerHome() {
       </Head>
       <div>Worker Home</div>
     </Layout>
-  )
+  );
 }

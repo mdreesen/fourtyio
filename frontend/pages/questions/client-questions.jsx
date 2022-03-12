@@ -1,11 +1,10 @@
-import Head from 'next/head'
-import Form from 'react-bootstrap/Form'
-import 'bootstrap/dist/css/bootstrap.css'
+import Head from 'next/head';
+import Form from 'react-bootstrap/Form';
 
-import questionData from '../../utils/clientQuestions.json'
+import questionData from '/utils/clientQuestions.json';
 
 export default function ClientQuestions() {
-  const aboutMotherQuestions = questionData?.aboutMother
+  const aboutMotherQuestions = questionData?.aboutMother;
 
   return (
     <>
@@ -25,10 +24,10 @@ export default function ClientQuestions() {
                   <Form.Control type="text" placeholder="optional..." />
                 </Form.Group>
               </Form>
-            )
+            );
           })}
         </section>
       </div>
     </>
-  )
+  );
 }
