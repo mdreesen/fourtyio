@@ -6,3 +6,36 @@ This project is a mono repo for Fourtyio.
 
 Please ensure you have the docker containers running before developing this project.
 It is suggested to run three terminals. One running the frontend, and two for the backend [one for the ts transpiler, and the other for nodemon]
+
+# Project Conventions
+
+The conventions defined below will help us keep our code clean, organized, and understandable.
+
+## JS
+
+{ examples in [ here ] }
+
+Functions:
+
+- Capital case for components [ AnExample ]
+- CamelCase for hooks [ anExample ]
+- Snake case for minor functions [ an_example ]
+
+Variables:
+
+- Snake case [ an_example ]
+
+Types(typescript):
+
+- CapitalCase for interfaces and custom types [ AnExample ]
+  - please be very explicit with naming types. be verbose if needed.
+
+## BEM
+
+We will be employing the B.E.M. naming convention to prevent naming collisions.
+If used correctly there shouldn't be a single style that overrides another.
+
+Please read this if you are not familiar with this practice:
+http://getbem.com/introduction/
+
+It's an ugly naming convention, however it works to great effect in large, long running projects, with complicated styling and animations.
