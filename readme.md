@@ -5,4 +5,4 @@ You will need docker installed and using docker compose v2. Check your docker se
 This project is a mono repo for Fourtyio.
 
 Please ensure you have the docker containers running before developing this project.
-It is suggested to run three terminals. One running the frontend, and two for the backend [one for the ts tranpiler, and the other for nodemon]
+It is suggested to run three terminals. One running the frontend, and two for the backend [one for the ts transpiler, and the other for nodemon]
