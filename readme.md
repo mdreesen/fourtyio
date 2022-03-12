@@ -28,7 +28,7 @@ Variables:
 - CamelCase for const [ anExample ]
 - Snake case for let [ an_example ]
 
-Types(typescript):
+Types (typescript):
 
 - CapitalCase for interfaces and custom types [ AnExample ]
   - please be very explicit with naming types. be verbose if needed.
