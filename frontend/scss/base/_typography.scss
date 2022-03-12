@@ -2,7 +2,14 @@
 
 *,
 *::before,
-*::after {
+*::after,
+html,
+html::before,
+html::after,
+body,
+body::before,
+body::after {
+  // replace these with your choice
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
 }
 
@@ -11,8 +18,6 @@ html {
   // derived from 10px/16 px
   // useful for responsive layouts
   font-size: 62.5%;
-
-  // replace these with your choice
 }
 
 body {
