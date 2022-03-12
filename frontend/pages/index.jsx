@@ -7,7 +7,7 @@ import { Test } from '/app/test';
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className="home">
       <Test />
       <Head>
         <title>Fourty-io</title>
@@ -15,16 +15,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <section className="landingHero">
+      <section className="home__landing-hero">
         <span>
-          <h1 className="title">Fourty-io</h1>
+          <h1 className="home__title">Fourty-io</h1>
         </span>
-        <div className="loginSignupBtn">
+        <div className="home__login-signupBtn">
           <UserLogin />
           <UserSignup />
         </div>
       </section>
-      <section className="aboutSection">
+      <section className="home__about-section">
         <h2>About</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
