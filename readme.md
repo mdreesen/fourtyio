@@ -31,6 +31,12 @@ Types(typescript):
 - CapitalCase for interfaces and custom types [ AnExample ]
   - please be very explicit with naming types. be verbose if needed.
 
+### Exports and Imports
+
+Please bias toward named exports when possible. Named exports provide a succint way to find functions and variables in the project as it grows.
+Remember to use 'import type' when bringing in a type from another module. All types are removed at run time which provides a smaller and faster bundle in production.
+Failing to do so will not make or break the project by any means, however it is inefficent and should be conciously avoided.
+
 ## BEM
 
 We will be employing the B.E.M. naming convention to prevent naming collisions.
