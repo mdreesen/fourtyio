@@ -1,27 +1,18 @@
 {
   "name": "fourtyio",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
     "fe": "cd frontend && npm run dev",
-    "bets": "cd backend && npm run dev",
-    "bemon": "cd backend && npm run mon",
-    "dcup": "bash ./dc-up.sh",
-    "dcstop": "bash ./dc-stop.sh"
+    "be:ts": "cd backend && npm run dev",
+    "be:mon": "cd backend && npm run mon"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mdreesen/fourtyio.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/mdreesen/fourtyio/issues"
   },
-  "homepage": "https://github.com/mdreesen/fourtyio#readme",
-  "dependencies": {
-    "docker": "^1.0.0"
-  }
+  "homepage": "https://github.com/mdreesen/fourtyio#readme"
 }
