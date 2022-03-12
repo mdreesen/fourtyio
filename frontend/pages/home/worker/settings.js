@@ -1,13 +1,13 @@
 import Head from 'next/head';
 import Layout from '../../components/Layout';
 
-export default function ClientHome() {
+export default function WorkerHome() {
     return (
         <Layout>
             <Head>
-                <title>Client Home</title>
+                <title>Worker Home</title>
             </Head>
-            <div>Client Home</div>
+            <div>Worker Home</div>
         </Layout>
     );
 }
