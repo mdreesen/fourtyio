@@ -23,7 +23,8 @@ Functions:
 
 Variables:
 
-- Snake case [ an_example ]
+- CamelCase for const [ anExample ]
+- Snake case for let [ an_example ]
 
 Types(typescript):
 
