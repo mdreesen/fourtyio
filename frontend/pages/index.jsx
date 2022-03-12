@@ -19,7 +19,7 @@ export default function Home() {
         <span>
           <h1 className="home__title">Fourty-io</h1>
         </span>
-        <div className="home__login-signupBtn">
+        <div className="home__login-signup-btn">
           <UserLogin />
           <UserSignup />
         </div>
