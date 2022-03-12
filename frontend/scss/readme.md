@@ -1,4 +1,4 @@
-## Main
+# Main
 
 Scss allows for greater control over the styling in a project in a more sane way.
 
@@ -7,6 +7,29 @@ Nesting this file here allows us to use these files in our styling if needed wit
 
 If you need to modify bootstrap please create a new file here(bootstrap.scss) and delegate all modifications here.
 Link the file in pages/\_app.scss above the import for 'main.scss'.
+
+# Project Conventions
+
+The conventions defined below will help us keep our code clean, organized, and understandable.
+
+## JS
+
+{ examples in [ here ] }
+
+Functions:
+
+- Capital case for components [ AnExample ]
+- CamelCase for hooks [ anExample ]
+- Snake case for minor functions [ an_example ]
+
+Variables:
+
+- Snake case [ an_example ]
+
+Types(typescript):
+
+- CapitalCase for interfaces and custom types [ AnExample ]
+  - please be very explicit with naming types. be verbose if needed.
 
 ## BEM
 
