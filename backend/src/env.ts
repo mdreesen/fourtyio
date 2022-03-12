@@ -22,6 +22,9 @@ export const redis = {
   host: prod ? REDIS_HOST! : 'localhost',
   port: prod ? +REDIS_PORT! : 6379,
   password: prod ? REDIS_PW! : undefined,
+  url: `redis://${prod ? REDIS_HOST! : 'localhost'}:${
+    prod ? +REDIS_PORT! : 6379
+  }`,
   session: {
     name: SESSION_NAME!,
     age: +SESSION_AGE!,
