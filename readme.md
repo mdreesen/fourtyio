@@ -20,12 +20,12 @@ The conventions defined below will help us keep our code clean, organized, and u
 Functions:
 
 - Capital case for components [ AnExample ]
-- CamelCase for hooks starting with 'use' prefix [ useExample ]
+- Camel Case for hooks starting with 'use' prefix [ useExample ]
 - Snake case for minor functions [ an_example ]
 
 Variables:
 
-- CamelCase for const [ anExample ]
+- Camel Case for const [ anExample ]
 - Snake case for let [ an_example ]
 
 Types (typescript):

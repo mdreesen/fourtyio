@@ -1,8 +1,8 @@
 import Navigation from '/components/Navigation/Navigation';
-import type { Children } from '/types/CommonTypes';
+import type { ReactChildren } from '/types/CommonTypes';
 
 interface LayoutProps {
-  children: Children;
+  children: ReactChildren;
 }
 
 export function Layout({ children }: LayoutProps) {
