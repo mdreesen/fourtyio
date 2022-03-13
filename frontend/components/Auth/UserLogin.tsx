@@ -21,7 +21,7 @@ export function UserLogin() {
         </Modal.Header>
         <Modal.Body>
           {/* Modal Body (username, email, password, and button) */}
-          <div className="modal-body" type="text">
+          <div className="modal-body">
             <LoginForm />
           </div>
         </Modal.Body>

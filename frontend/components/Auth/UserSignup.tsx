@@ -20,7 +20,7 @@ export function UserSignup() {
         </Modal.Header>
         <Modal.Body>
           {/* Modal Body (username, email, password, and button) */}
-          <div className="modal-body" type="text">
+          <div className="modal-body">
             <form>
               <div>
                 <label id="signupUsernameLabel" htmlFor="signup-username">
