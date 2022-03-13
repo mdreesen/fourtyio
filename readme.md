@@ -30,7 +30,7 @@ Variables:
 
 Types (typescript):
 
-- CapitalCase for interfaces and custom types [ AnExample ]
+- Capital Case for interfaces and custom types [ AnExample ]
   - please be very explicit with naming types. be verbose if needed.
 
 ### Imports and Exports
