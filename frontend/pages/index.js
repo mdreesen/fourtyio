@@ -1,9 +1,9 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from '../styles/Home.module.css';
 
-import UserSignup from '../components/UserSignup'
-import UserLogin from '../components/UserLogin'
+import UserSignup from '../components/UserSignup';
+import UserLogin from '../components/UserLogin';
 
 export default function Home() {
 
@@ -15,7 +15,20 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <div className={styles.img_wrapper}>
+          <Image
+            src="/images/landing/landing.webp" // Route of the image file
+            height={878} // Desired size with correct aspect ratio
+            width={878} // Desired size with correct aspect ratio
+            layout="responsive"
+            objectFit="cover"
+            position="fixed"
+            alt="mother and baby holding hands"
+          />
+        </div>
+
       <section className="landingHero">
+
         <span><h1 className="title">Fourty-io</h1></span>
         <div className="loginSignupBtn">
           <UserLogin />
@@ -41,15 +54,6 @@ export default function Home() {
           anim id est laborum.
         </p>
       </section>
-      {/* <Image
-            src="/images/landing/landing_2.webp" // Route of the image file
-            height={878} // Desired size with correct aspect ratio
-            width={878} // Desired size with correct aspect ratio
-            layout="responsive"
-            objectFit="cover"
-            position="fixed"
-            alt="mother and baby holding hands"
-          /> */}
 
       {/* <footer className={styles.footer}>
         <a
