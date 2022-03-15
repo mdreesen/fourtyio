@@ -6,9 +6,9 @@ export default function Navigation() {
   return (
     <Navbar bg="light" variant="light">
       <Container>
-        <Navbar.Brand href="#home">fourtyio</Navbar.Brand>
-        <Nav className="me-auto">
-          <Nav.Link href="/home/client/home">home</Nav.Link>
+        <Navbar.Brand>fourtyio</Navbar.Brand>
+        <Nav>
+          <Nav.Link href="/home/client/home">Home</Nav.Link>
           <Nav.Link href="/home/client/settings">Settings</Nav.Link>
           <Nav.Link href="#pricing">Link</Nav.Link>
         </Nav>
