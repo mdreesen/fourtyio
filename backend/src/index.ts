@@ -7,7 +7,7 @@ import { cfg } from 'src/env';
 import { router } from 'src/routes/router';
 import { TypeOrmInit } from 'src/db/typeorm';
 import { express_session } from 'src/middleware/redis.session';
-import { redisClient } from 'src/db/redis';
+import { redis } from 'src/db/redis';
 
 const app = express();
 
@@ -23,9 +23,11 @@ app.use(ep_log);
     app.use(...(await router()));
 
     await TypeOrmInit();
-    await redisClient.connect().then(() => console.log('redis connected'));
+    await redis.connect().then(() => console.log('redis connected'));
 
-    app.listen(cfg.port, () => console.log(`@ http://localhost:${cfg.port}`));
+    app.listen(cfg.server.port, () =>
+      console.log(`@ http://localhost:${cfg.server.port}`)
+    );
   } catch (err) {
     console.log(err);
   }

@@ -1,7 +1,7 @@
 import connectRedis from 'connect-redis';
 import session from 'express-session';
 import { client } from 'src/db/redis';
-import { sess } from 'src/env';
+import { cfg } from 'src/env';
 
 const RedisStore = connectRedis(session);
 
@@ -10,10 +10,10 @@ export const express_session = session({
   cookie: {
     secure: false,
     httpOnly: false,
-    maxAge: sess.age,
+    maxAge: cfg.session.age,
   },
-  name: sess.name,
-  secret: sess.secret,
+  name: cfg.session.name,
+  secret: cfg.session.secret,
   saveUninitialized: false,
   resave: false,
 });

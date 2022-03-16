@@ -1,10 +1,10 @@
 import type { Client } from 'connect-redis';
 import { createClient } from 'redis';
-import { redis } from 'src/env';
+import { cfg } from 'src/env';
 
-export const redisClient = createClient({
+export const redis = createClient({
   legacyMode: true,
-  url: redis.url,
+  url: cfg.redis.url,
 });
 
-export const client = (<unknown>redisClient) as Client;
+export const client = (<unknown>redis) as Client;
