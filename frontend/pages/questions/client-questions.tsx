@@ -17,11 +17,11 @@ export default function ClientQuestions() {
           {aboutMotherQuestions?.map((question, index) => {
             return (
               <Form>
-                <Form.Group className="mb-3" controlId="formGroupEmail">
+                <Form.Group className='mb-3' controlId='formGroupEmail'>
                   <Form.Label>{`${index + 1}. ${
                     question?.question
                   }`}</Form.Label>
-                  <Form.Control type="text" placeholder="optional..." />
+                  <Form.Control type='text' placeholder='optional...' />
                 </Form.Group>
               </Form>
             );
