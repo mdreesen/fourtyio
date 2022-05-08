@@ -7,8 +7,6 @@ export async function get_all_users(_req: Request, res: Response) {
   try {
     const data = await dbq<Users[]>({
       query_string: get_all_users_query,
-      query_params: [],
-      query_rows: 'all',
     });
 
     res.status(200).send({ status: 'good', data });

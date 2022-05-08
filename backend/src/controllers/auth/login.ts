@@ -3,10 +3,10 @@ import { dbq } from 'src/db/db';
 import { post_login_query } from 'src/db/sql/login.queries';
 import type { Users } from 'src/models/Users';
 
-export async function login(req: Request, res: Response) {
-  const { username, password } = req.body;
-  const { session } = req;
-
+export async function login(
+  { session, body: { username, password } }: Request,
+  res: Response
+) {
   try {
     if (!username || !password) {
       res.status(404).send({ msg: 'Please enter a username and password' });

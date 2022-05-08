@@ -4,8 +4,8 @@ export const db = new Pool({ idleTimeoutMillis: 100 });
 
 interface DatabaseQuery {
   query_string: string;
-  query_params: string[];
-  query_rows: 'all' | 'one';
+  query_params?: string[];
+  query_rows?: 'all' | 'one';
 }
 
 /**
@@ -22,11 +22,13 @@ interface DatabaseQuery {
  *
  * returns Promise of type T
  */
-export async function dbq<T>({
-  query_string,
-  query_params,
-  query_rows,
-}: DatabaseQuery): Promise<T> {
+export async function dbq<T>(
+  { query_string, query_params, query_rows }: DatabaseQuery = {
+    query_string: '',
+    query_params: [''],
+    query_rows: 'all',
+  }
+): Promise<T> {
   //
   return (await db
     .query(query_string, query_params)
