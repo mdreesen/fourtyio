@@ -21,6 +21,12 @@ interface DatabaseQuery {
  * Please pass it a model, interace, or type.
  *
  * returns Promise of type T
+ *
+ * Please note:
+ * Ommitted argument properties' defaults are
+ * 'all' for 'query_rows' and [ ] for 'query_params'.
+ *
+ * 'query_string' is required.
  */
 export async function dbq<T>(
   { query_string, query_params, query_rows }: DatabaseQuery = {
@@ -29,7 +35,6 @@ export async function dbq<T>(
     query_rows: 'all',
   }
 ): Promise<T> {
-  //
   return (await db
     .query(query_string, query_params)
     .then(({ rows }) => (query_rows ? rows : rows[0]))
