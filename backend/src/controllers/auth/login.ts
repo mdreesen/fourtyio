@@ -13,7 +13,11 @@ export async function login(req: Request, res: Response) {
       return;
     }
 
-    const data = await dbq<Users>(post_login_query, [username, password], 0);
+    const data = await dbq<Users>({
+      query_string: post_login_query,
+      query_params: [username, password],
+      query_rows: 'one',
+    });
 
     if (!data) {
       res.status(404).send({ msg: 'Wrong username or password' });
